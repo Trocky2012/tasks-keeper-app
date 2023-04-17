@@ -51,7 +51,7 @@ function Header(props) {
             </h1>
           : 
             <h1>
-              ASM Tasks
+              # ASM Tasks
             </h1>
           }
         <div style={{display: 'flex', flexDirection: 'row',justifyContent:'space-evenly'}}>
@@ -79,10 +79,10 @@ function Header(props) {
           {isExpanded && (
             <div className="mt-0" style={{marginLeft:20}}>
               {isPrepared ? 
-              <button type="submit" onClick={getUser} className="btn btn-primary">
+              <button style={{backgroundColor: '#0080ff', color: 'white', padding:10}} type="submit" onClick={getUser} className="btn btn-primary">
                 Enter
               </button>: 
-              <button type="submit" onClick={check} className="btn btn-secondary">
+              <button style={{backgroundColor: '#c0c0c0', padding:10}} type="submit" onClick={check} className="btn btn-secondary">
                 Check
               </button>
             }
